@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk1w2tfxsq658"]
+
+[ext_resource type="Texture2D" uid="uid://cyl52b5vtd3au" path="res://imagenes/transmi.png" id="1_hjlk0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s5xgu"]
+size = Vector2(32, 96)
+
+[node name="Transmilenio" type="Area2D" groups=["subido"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hjlk0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-176, 16)
+shape = SubResource("RectangleShape2D_s5xgu")
+debug_color = Color(0.5736285, 0.55499756, 0, 0.41960785)

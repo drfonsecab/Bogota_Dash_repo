@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://biv1ki8os0gxu"]
+
+[ext_resource type="Texture2D" uid="uid://d15g4d6cqki30" path="res://imagenes/T_GroundCrack_2.png" id="1_y1eag"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y1eag"]
+radius = 39.02
+
+[node name="Area2D" type="Area2D" groups=["kill"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_y1eag")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["kill"]]
+shape = SubResource("CircleShape2D_y1eag")
+debug_color = Color(1, 0.496046, 0.4065256, 0.41960785)

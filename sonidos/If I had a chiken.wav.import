@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dp5vx86uhhoc3"
+path="res://.godot/imported/If I had a chiken.wav-6eaf03e0a1c98046dbd346041798918f.sample"
+
+[deps]
+
+source_file="res://sonidos/If I had a chiken.wav"
+dest_files=["res://.godot/imported/If I had a chiken.wav-6eaf03e0a1c98046dbd346041798918f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

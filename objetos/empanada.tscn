@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://depq7jtlit071"]
+
+[ext_resource type="Script" uid="uid://bmy04f0x1proo" path="res://scripts/empanada.gd" id="1_3psyu"]
+[ext_resource type="Texture2D" uid="uid://c1f5kljw7y4l2" path="res://imagenes/Empanada.png" id="1_n7wb1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3psyu"]
+radius = 32.76
+
+[node name="orbe" type="Area2D" groups=["orbe"]]
+script = ExtResource("1_3psyu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-9.536743e-07, -4.7683716e-07)
+scale = Vector2(0.058383185, 0.07022476)
+texture = ExtResource("1_n7wb1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["orbe"]]
+shape = SubResource("CircleShape2D_3psyu")

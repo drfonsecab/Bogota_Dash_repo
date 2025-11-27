@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://k3sffsexqrkm"]
+
+[ext_resource type="Script" uid="uid://bh5jdv0capi60" path="res://scripts/fondo.gd" id="1_1cujc"]
+[ext_resource type="Texture2D" uid="uid://3btm5y0bq7gq" path="res://imagenes/fondo.png" id="2_1cujc"]
+
+[node name="suelo" type="StaticBody2D"]
+script = ExtResource("1_1cujc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(7.069111e-05, 2.6708252)
+scale = Vector2(0.92857146, 1.3417726)
+texture = ExtResource("2_1cujc")
+region_enabled = true
+region_rect = Rect2(0, 4.914612, 2688, 473.2824)

@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://cet8yako4ilpf"]
+
+[ext_resource type="Script" uid="uid://cqaqdvsibmwop" path="res://scripts/menu.gd" id="1_2owot"]
+[ext_resource type="Texture2D" uid="uid://d2thwpxlgokgd" path="res://imagenes/3_ Button_ 1 Tombo Survivor.png" id="1_d7r87"]
+[ext_resource type="Script" uid="uid://djgnnlflp8xro" path="res://scripts/boton_reinicio.gd" id="1_vdanu"]
+[ext_resource type="AudioStream" uid="uid://dp5vx86uhhoc3" path="res://sonidos/If I had a chiken.wav" id="4_6cq3m"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_2owot")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1908.0
+offset_bottom = 962.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 304.0
+offset_top = 240.0
+offset_right = 1685.0
+offset_bottom = 323.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "¡Bien hecho! Lograste subirte al Trasto a tiempo"
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(992, 464)
+texture = ExtResource("1_d7r87")
+
+[node name="Button" type="Button" parent="Sprite2D"]
+offset_left = -304.0
+offset_top = -96.0
+offset_right = 324.0
+offset_bottom = 72.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+text = "Reiniciar"
+flat = true
+script = ExtResource("1_vdanu")
+
+[node name="musica_menu" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_6cq3m")
